@@ -99,6 +99,7 @@ dialog.matches('nextMove',[
 			line = line + 1;
 		}
 		else{
+			line = 0;
 			session.endConversation("That's the end of the dance! Hope to see you soon!");
 		}
 		
