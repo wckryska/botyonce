@@ -51,8 +51,8 @@ bot.dialog('/', dialog);
 
 dialog.matches('Greeting',[
 	function(session, args, next){
-		console.log("got to Greeting");
 		builder.Prompts.text(session, "Hello!  I am Botyonce and I will teach you how to dance! Would you like to learn how to dance to the hokey pokey?");
+		console.log("got to Greeting");
 	},
 	function(session, results, next){
 		if((results.response == "yes") || (results.response == "Yes")){
