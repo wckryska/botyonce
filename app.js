@@ -52,7 +52,7 @@ bot.dialog('/', dialog);
 dialog.matches('Greeting',[
 	function(session, args, next){
 		builder.Prompts.text(session, "Hello!  I am Botyonce and I will teach you how to dance! Would you like to learn how to dance to the hokey pokey?");
-		console.log("got to Greeting");
+		//console.log("got to Greeting");
 	},
 	function(session, results, next){
 		if((results.response == "yes") || (results.response == "Yes")){
@@ -67,7 +67,7 @@ dialog.matches('Greeting',[
 bot.dialog('/selectDance', [
 	function(session){
 		builder.Prompts.text(session, "Tell me when you are ready!");
-		console.log("select greeting");
+		//console.log("select greeting");
 		session.endDialog();
 	}
 ]);
