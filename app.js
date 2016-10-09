@@ -105,6 +105,12 @@ dialog.matches('nextMove',[
 	}
 ]);
 
+dialog.matches('None',[
+	function(session){
+		session.send("I didn't understand that, please try again");
+	}
+]);
+
 
 
 
