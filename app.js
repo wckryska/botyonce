@@ -40,7 +40,7 @@ var line = 0;
 
 
 // Create LUIS recognizer that points at our model and add it as the root '/' dialog for our Cortana Bot.
-var model = 'https://api.projectoxford.ai/luis/v1/application?id=734ac012-e96d-4ccd-ae76-87575718229e&subscription-key=' + process.env.KEY_LUIS;
+var model = 'https://api.projectoxford.ai/luis/v1/application?id=734ac012-e96d-4ccd-ae76-87575718229e&subscription-key=' + process.env.LUIS_KEY;
 var recognizer = new builder.LuisRecognizer(model);
 var dialog = new builder.IntentDialog({ recognizers: [recognizer] });
 bot.dialog('/', dialog);
